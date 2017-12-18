@@ -1,0 +1,26 @@
+body {
+  background-color: #7DCDEF;
+}
+
+.jumbotron {
+  margin-left: -20%;
+  margin-right: -20%;
+  border-bottom: #0474A5 2px solid;
+}
+
+#content {
+  text-align: center;
+}
+
+#htmlField {
+  width: 80%;
+  margin: 0 10% 0 10%;
+  height: 60vh;
+}
+
+#inputGroup {
+  margin-left: 10%;
+}
+#copy {
+  margin-left: 75%;
+}
