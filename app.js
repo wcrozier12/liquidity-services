@@ -5,11 +5,11 @@ $(document).ready(function(){
     let html = '<div>\n';
     const promises = [];
     auctions.forEach((auction, i) => {
-      const queryString = 'http://www.govliquidation.com/auction/view?auctionId=' + auction;
+      const queryString = 'https://www.govliquidation.com/auction/view?auctionId=' + auction;
 
       const request = $.get(queryString, function(data) {
         const lotNumber  = $(data).find('.event-details label:last span').text();
-        const imageSrc   = 'http://www.govliquidation.com/' + $(data).find('#auction_photos img.large-thumbnail').attr('xsrc');
+        const imageSrc   = 'https://www.govliquidation.com/' + $(data).find('#auction_photos img.large-thumbnail').attr('xsrc');
         const description = $(data).find('#description_container').text().replace('Description:','').trim();
         const category    = $(data).find('.breadcrumbs-bin ul li:last a').text();
         const quantity    = $(data).find('.auction-details table tr:first td:last').text().substring(0,$(data).find('.auction-details table tr:first td:last').text().indexOf('(')).trim();
